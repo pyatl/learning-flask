@@ -14,7 +14,8 @@ def list_posts():
     posts = glob.glob(f'posts/*.txt')
     return [
         post_name.split('.')[0] for post_name in [
-            post.split('/')[1] for post in posts] if post_name not in  ['404.txt', 'index.txt']
+            post.split('/')[1] for post in posts
+            ] if post_name not in  ['404.txt', 'index.txt']
         ]
 
 def get_file_contents(filename, feed=False):
