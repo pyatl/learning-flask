@@ -38,5 +38,5 @@ export FLASK_ENV=development
 python -m flask run
 ```
 
-
-
+#### Feed client
+Run `python feed_client.py`
