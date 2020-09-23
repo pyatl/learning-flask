@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    {{ content }}
+
+    {% for post in posts %}
+    <p><a href="/posts/{{ post }}">{{ post }}</a></p>
+    {% endfor %}
+
+
+</body>
+</html>
