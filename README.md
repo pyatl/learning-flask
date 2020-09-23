@@ -22,8 +22,21 @@ Install dependencies:
 
 ### Run
 
+If you are on Windows make sure to use `set` instead of export.
+
+Windows:
 ```
-export FLASK_APP=app.py
+set FLASK_APP=app.py
+set FLASK_ENV=development
 python -m flask run
 ```
+
+Linux / OSX:
+```
+export FLASK_APP=app.py
+export FLASK_ENV=development
+python -m flask run
+```
+
+
 
